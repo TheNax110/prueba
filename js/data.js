@@ -1,19 +1,3 @@
-/* ============================================================
-   data.js
-   ------------------------------------------------------------
-   Capa de acceso a datos (DAO) de LIMPIARTE.
-   ------------------------------------------------------------
-   Antes: simulaba una base de datos con localStorage/sessionStorage.
-   Ahora: se conecta a una base de datos real en Supabase (PostgreSQL)
-   usando el cliente inicializado en js/supabase.js.
-
-   Se mantienen los mismos nombres de función que usaba el resto
-   del sitio (LimpiarteDB.getProductos(), etc.) para no tener que
-   reescribir productos.js / admin.js / auth.js desde cero. La
-   diferencia es que TODAS las funciones ahora son asíncronas:
-   hay que llamarlas con `await`.
-   ============================================================ */
-
 const LimpiarteDB = (() => {
 
   function formatearPrecio(valor) {

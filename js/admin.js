@@ -1,12 +1,3 @@
-/* ============================================================
-   admin.js
-   ------------------------------------------------------------
-   Lógica exclusiva del panel de administración: dashboard,
-   gestión de productos, rubros, marcas y listado de usuarios.
-   Protegido por rol (solo accesible para rol === 'admin'),
-   validado tanto acá como por las políticas RLS en Supabase.
-   ============================================================ */
-
 let productoEnEdicion = null;
 let rubroEnEdicion = null;
 let marcaEnEdicion = null;

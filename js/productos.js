@@ -1,13 +1,3 @@
-/* ============================================================
-   productos.js
-   ------------------------------------------------------------
-   Renderiza el catálogo en index.html: búsqueda, filtro por
-   rubro, filtro por marca, ordenamiento y modal de detalle.
-   Los productos NUNCA se escriben a mano en el HTML: siempre
-   se generan dinámicamente consultando a Supabase a través de
-   LimpiarteDB (ver js/data.js).
-   ============================================================ */
-
 let filtrosCatalogo = {
   texto: '',
   rubroId: 'todos',
@@ -15,8 +5,6 @@ let filtrosCatalogo = {
   orden: 'relevancia'
 };
 
-// Caches simples en memoria para no repetir consultas de rubros/marcas
-// cada vez que se re-renderiza el catálogo.
 let cacheRubros = [];
 let cacheMarcas = [];
 

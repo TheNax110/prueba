@@ -1,11 +1,3 @@
-/* ============================================================
-   auth.js
-   ------------------------------------------------------------
-   Maneja: registro, login, logout y actualización del header
-   según el estado de sesión de Supabase Auth. Se incluye en
-   TODAS las páginas.
-   ============================================================ */
-
 const REGEX_EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 /* ------------------------- header dinámico ------------------------- */

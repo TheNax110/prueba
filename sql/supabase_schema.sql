@@ -1,19 +1,4 @@
-/* ============================================================
-   LIMPIARTE — Esquema completo de base de datos para Supabase
-   ------------------------------------------------------------
-   Ejecutar TODO este archivo de una sola vez en:
-   Supabase → SQL Editor → New query → pegar → Run
-   ============================================================ */
-
--- ============================================================
--- 0. EXTENSIONES
--- ============================================================
 create extension if not exists "pgcrypto";
-
-
--- ============================================================
--- 1. TABLAS
--- ============================================================
 
 -- ---------- PERFILES (vinculada a auth.users) ----------
 create table if not exists public.perfiles (
